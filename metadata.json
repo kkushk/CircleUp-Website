@@ -1,0 +1,8 @@
+{
+  "name": "CIrcleUp Webiste ",
+  "description": "Create and customize full-stack web applications and websites with AI Studio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
