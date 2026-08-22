@@ -339,6 +339,8 @@ export const SmsConsentPage: React.FC<SmsConsentPageProps> = ({ onNavigate }) =>
               badgeLabel="Actual App Screenshot"
               heading="Actual App Screenshot: Checkbox Unchecked"
               caption="This actual CircleUp application screenshot shows the SMS consent checkbox unchecked by default. The Add Outside Guest & Send Invite button is gray and disabled until the inviting user confirms that the guest personally provided prior written consent for the specific match invitation."
+              imageSrc="/images/IMG_2508.PNG"
+              imageAlt="Actual CircleUp app SMS consent screen with the checkbox unchecked and the Add Outside Guest & Send Invite button disabled."
               demonstrates={[
                 "CircleUp brand",
                 "Match information",
@@ -361,6 +363,8 @@ export const SmsConsentPage: React.FC<SmsConsentPageProps> = ({ onNavigate }) =>
               badgeLabel="Actual App Screenshot"
               heading="Actual App Screenshot: Checkbox Selected"
               caption="This actual CircleUp application screenshot shows the inviting user actively selecting the SMS consent checkbox after obtaining the guest’s prior written consent. The Add Outside Guest & Send Invite button then becomes enabled."
+              imageSrc="/images/IMG_2509.PNG"
+              imageAlt="Actual CircleUp app SMS consent screen with the checkbox selected and the Add Outside Guest & Send Invite button enabled."
               demonstrates={[
                 "The same guest information",
                 "The same match information",

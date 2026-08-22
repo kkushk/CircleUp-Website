@@ -1,7 +1,7 @@
 export const SITE_CONFIG = {
   brandName: 'CircleUp',
   legalCompanyName: 'Circle Up Tech LLC',
-  domain: 'https://joincircleplay.com',
+  domain: 'https://www.joincircleplay.com',
   supportEmail: 'contact@joincircleplay.com',
   
   // App store links
@@ -38,14 +38,14 @@ export const SITE_CONFIG = {
   complianceReview: {
     business: 'Circle Up Tech LLC',
     brand: 'CircleUp',
-    website: 'https://joincircleplay.com',
+    website: 'https://www.joincircleplay.com',
     messagingPurpose: 'User-initiated A2P sports match invitations sent to outside guests after the guests provide prior express written consent.',
     smsRecipients: 'Outside guests who have provided prior express written consent to receive one SMS invitation for a specific match.',
     optInLocation: 'Written consent obtained by inviting user; confirmed in CircleUp mobile app via unchecked checkbox.',
     optInMethod: 'The guest provides prior express written consent. The inviting user enters the guest telephone number and actively confirms that consent through an unchecked checkbox before dispatching one SMS match invitation.',
-    privacyPolicyUrl: 'https://joincircleplay.com/privacy-policy',
-    termsUrl: 'https://joincircleplay.com/terms',
-    smsConsentUrl: 'https://joincircleplay.com/sms-consent',
+    privacyPolicyUrl: 'https://www.joincircleplay.com/privacy-policy',
+    termsUrl: 'https://www.joincircleplay.com/terms',
+    smsConsentUrl: 'https://www.joincircleplay.com/sms-consent',
     supportEmail: 'contact@joincircleplay.com',
   }
 };
