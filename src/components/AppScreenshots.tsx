@@ -55,12 +55,15 @@ export const ScreenHome: React.FC = () => (
         </div>
       </div>
 
-      {/* Section Header */}
-      <div className="flex items-center justify-between px-0.5 pt-0.5 shrink-0">
-        <h3 className="text-xs font-extrabold text-slate-900 tracking-tight">
-          Upcoming Matches
-        </h3>
-        <span className="px-2 py-0.5 bg-[#EEF4FF] text-[#1D63FF] text-[9.5px] font-bold rounded-full">
+      {/* Section Header: Live Match Feed */}
+      <div className="flex items-center justify-between px-1 py-0.5 shrink-0">
+        <div className="flex items-center gap-1.5">
+          <span className="w-1.5 h-1.5 rounded-full bg-[#10B981] animate-pulse" />
+          <h3 className="text-xs font-extrabold text-slate-900 tracking-tight">
+            Live Match Feed
+          </h3>
+        </div>
+        <span className="px-2 py-0.5 bg-[#EEF4FF] text-[#1D63FF] text-[9.5px] font-bold rounded-full border border-blue-100/60">
           3 Scheduled
         </span>
       </div>

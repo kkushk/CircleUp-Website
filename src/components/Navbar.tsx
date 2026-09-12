@@ -44,8 +44,9 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath, onNavigate }) => {
 
   const navItems = [
     { label: 'Product', href: '/#product' },
-    { label: 'How It Works', href: '/#how-it-works' },
     { label: 'Sports', href: '/#sports' },
+    { label: 'How It Works', href: '/#how-it-works' },
+    { label: 'Features', href: '/#features' },
     { label: 'About', href: '/about' },
     { label: 'Support', href: '/support' },
   ];

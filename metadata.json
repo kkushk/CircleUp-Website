@@ -1,6 +1,6 @@
 {
   "name": "CIrcleUp Webiste ",
-  "description": "Create and customize full-stack web applications and websites with AI Studio.",
+  "description": "CircleUp is the scheduling engine for sports. Make sports scheduling simple across squash, tennis, padel, pickleball, golf, and beyond.",
   "requestFramePermissions": [],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"

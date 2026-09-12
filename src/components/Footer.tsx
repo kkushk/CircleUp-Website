@@ -36,7 +36,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               {SITE_CONFIG.visionStatement}
             </p>
             <p className="text-xs text-slate-500">
-              Built for the way athletes actually play. Starting with squash and SDA doubles. Designed for every sport.
+              {SITE_CONFIG.heroPositioning}
             </p>
             <div className="pt-2">
               <AppButtons size="compact" theme="light" />
@@ -60,11 +60,29 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </li>
               <li>
                 <a
+                  href="/#sports"
+                  onClick={(e) => handleHashLink('sports', e)}
+                  className="hover:text-slate-950 transition-colors"
+                >
+                  Sports Covered
+                </a>
+              </li>
+              <li>
+                <a
                   href="/#how-it-works"
                   onClick={(e) => handleHashLink('how-it-works', e)}
                   className="hover:text-slate-950 transition-colors"
                 >
                   How It Works
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/#features"
+                  onClick={(e) => handleHashLink('features', e)}
+                  className="hover:text-slate-950 transition-colors"
+                >
+                  Features
                 </a>
               </li>
               <li>

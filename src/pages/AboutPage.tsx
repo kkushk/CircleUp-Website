@@ -44,11 +44,11 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           </p>
 
           <p>
-            We're starting with squash and SDA doubles, where coordinating several players can create unnecessary friction, and building toward a platform that makes organizing recreational sports dramatically easier.
+            Built for the way athletes actually play. Starting from squash and doubles, and expanding across racquet sports, golf, and beyond—CircleUp brings match scheduling into one place so athletes spend less time coordinating and more time playing.
           </p>
 
           <p>
-            Whether coordinating singles or four-player doubles, athletes have spent too much time fielding group chats, aligning calendars, and confirming attendance. CircleUp streamlines that entire workflow into a clean, intuitive, and modern mobile experience.
+            Whether coordinating 1v1 singles, four-player doubles, or weekend foursomes, athletes have spent too much time fielding group chats, aligning calendars, and tracking down replies. CircleUp streamlines that entire workflow into a clean, intuitive, and modern mobile experience.
           </p>
 
           {/* Legal Identity Card */}

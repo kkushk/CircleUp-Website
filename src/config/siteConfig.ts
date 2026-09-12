@@ -22,14 +22,91 @@ export const SITE_CONFIG = {
   
   // Taglines
   heroHeadline: 'Schedule the game. Skip the group chat.',
-  heroSubheadline: 'CircleUp makes it simple to organize the people, place, and time for your next match without the endless back-and-forth.',
-  heroPositioning: 'Built for the way athletes actually play. Starting with squash and SDA doubles. Designed for every sport.',
+  heroSubheadline: 'CircleUp makes it simple to bring together the people, place, and time for your next game—without the endless back-and-forth.',
+  heroSportsList: 'Squash. Tennis. Padel. Pickleball. Golf. And more.',
+  heroPositioning: 'Built for the way athletes actually play. Starting from squash and doubles. Expanding across racquet sports, golf, and beyond.',
   visionStatement: 'The scheduling engine for sports.',
   brandPunchlines: {
     lessCoordinating: 'Less coordinating. More playing.',
     fromIdeaToMatch: 'From idea to match in a few taps.',
-    simpleLoop: 'Open CircleUp. Pick your players. Schedule the match. Play.',
+    simpleLoop: 'Create. Invite. Confirm. Play.',
   },
+
+  // Supported Sports
+  supportedSports: [
+    { 
+      id: 'squash', 
+      name: 'Squash', 
+      type: 'Racquet Sport',
+      format: 'Singles & Doubles', 
+      court: '45-Min Match Blocks',
+      description: 'Court bookings, club ladders, and standard 45-minute singles or doubles match slots.',
+      status: 'Active'
+    },
+    { 
+      id: 'sda-doubles', 
+      name: 'SDA Doubles', 
+      type: 'Court Squash',
+      format: '4-Player Doubles', 
+      court: 'Hardball Court',
+      description: 'Engineered for 4-player rosters with left-wall and right-wall side preferences.',
+      status: 'Active'
+    },
+    { 
+      id: 'tennis', 
+      name: 'Tennis', 
+      type: 'Racquet Sport',
+      format: 'Singles & Doubles', 
+      court: 'Indoor & Outdoor',
+      description: 'Organize sets, friendly hits, and club doubles without messy group texts.',
+      status: 'Active'
+    },
+    { 
+      id: 'pickleball', 
+      name: 'Pickleball', 
+      type: 'Paddle Sport',
+      format: 'Doubles & Singles', 
+      court: 'Dedicated Courts',
+      description: 'Quick game scheduling for 4-player doubles and open court rotations.',
+      status: 'Active'
+    },
+    { 
+      id: 'badminton', 
+      name: 'Badminton', 
+      type: 'Racquet Sport',
+      format: 'Singles & Doubles', 
+      court: 'Indoor Courts',
+      description: 'Fast rally play coordination with reliable participant confirmations.',
+      status: 'Active'
+    },
+    { 
+      id: 'padel', 
+      name: 'Padel', 
+      type: 'Racquet Sport',
+      format: '4-Player Doubles', 
+      court: 'Glass Enclosures',
+      description: 'Effortless 4-player booking coordination for rapidly growing padel communities.',
+      status: 'Active'
+    },
+    { 
+      id: 'table-tennis', 
+      name: 'Table Tennis', 
+      type: 'Paddle Sport',
+      format: 'Singles & Doubles', 
+      court: 'Club & Rec',
+      description: 'Quick match scheduling and friendly ladders across clubs and rec spaces.',
+      status: 'Active'
+    },
+    { 
+      id: 'golf', 
+      name: 'Golf', 
+      type: 'Recreation & Club',
+      format: 'Foursomes & Pairs', 
+      court: 'Course & Tee Times',
+      description: 'Coordinate your four-ball or friendly round without days of back-and-forth.',
+      status: 'Active'
+    },
+  ],
   
   // Exact SMS Invitation Disclosure & Purpose
   exactAppSmsDisclosure: 'CircleUp allows a registered user to invite an outside guest to participate in a specific sports match. When the guest is not registered with CircleUp, the inviting user may request that CircleUp send the guest one SMS invitation for that specific match. Before CircleUp sends the SMS, the guest must personally provide prior express written consent. The inviting user cannot provide consent on the guest’s behalf. After receiving the guest’s written consent, the inviting user must actively confirm that consent through a separate checkbox inside the CircleUp mobile application. A separate written consent and confirmation are required for every future SMS match invitation.',
