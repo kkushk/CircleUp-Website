@@ -68,7 +68,7 @@ export const HeroVisual: React.FC = () => {
         </div>
         <div className="truncate">
           <div className="text-[10px] uppercase font-bold text-slate-400 leading-none">Match Chat</div>
-          <div className="text-xs font-semibold text-slate-900 mt-0.5 truncate">"Bringing fresh balls!"</div>
+          <div className="text-xs font-semibold text-slate-900 mt-0.5 truncate">"See you on the court!"</div>
         </div>
       </div>
 
