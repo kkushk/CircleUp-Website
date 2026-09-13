@@ -55,8 +55,8 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath, onNavigate }) => {
     <header 
       className={`sticky top-0 z-50 w-full transition-all duration-300 ${
         scrolled 
-          ? 'bg-white/80 backdrop-blur-xl border-b border-slate-200/80 shadow-[0_4px_20px_rgba(0,0,0,0.03)] py-3' 
-          : 'bg-white/65 backdrop-blur-lg border-b border-slate-200/50 py-4'
+          ? 'bg-white/85 backdrop-blur-xl border-b border-slate-200/80 shadow-[0_4px_24px_rgba(15,23,42,0.04)] py-3' 
+          : 'bg-white/70 backdrop-blur-lg border-b border-slate-200/60 py-4'
       }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
@@ -64,7 +64,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath, onNavigate }) => {
         <a 
           href="/" 
           onClick={(e) => handleNavClick('/', e)}
-          className="hover:opacity-90 transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 rounded-lg"
+          className="hover:opacity-95 transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 rounded-lg"
           aria-label="CircleUp Home"
         >
           <Logo />
@@ -77,7 +77,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath, onNavigate }) => {
               key={item.label}
               href={item.href}
               onClick={(e) => handleNavClick(item.href, e)}
-              className={`hover:text-slate-950 transition-colors ${
+              className={`hover:text-slate-950 transition-colors py-1 ${
                 currentPath === item.href ? 'text-slate-950 font-semibold' : ''
               }`}
             >
@@ -88,7 +88,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath, onNavigate }) => {
           <a
             href="/#download"
             onClick={(e) => handleNavClick('/#download', e)}
-            className="ml-2 inline-flex items-center justify-center px-4 py-2 rounded-full bg-slate-900 hover:bg-black text-white text-xs font-semibold tracking-wide transition-all shadow-sm active:scale-95"
+            className="ml-2 inline-flex items-center justify-center px-4 py-2 rounded-full bg-slate-950 hover:bg-black text-white text-xs font-semibold tracking-wide transition-all shadow-xs active:scale-95"
           >
             Download
           </a>
@@ -99,13 +99,13 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath, onNavigate }) => {
           <a
             href="/#download"
             onClick={(e) => handleNavClick('/#download', e)}
-            className="px-3 py-1.5 rounded-full bg-slate-900 text-white text-xs font-semibold"
+            className="px-3.5 py-1.5 rounded-full bg-slate-950 text-white text-xs font-semibold"
           >
             Download
           </a>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2 text-slate-700 hover:text-slate-900 rounded-lg focus:outline-none"
+            className="p-2 text-slate-700 hover:text-slate-950 rounded-xl focus:outline-none hover:bg-slate-100/80 transition-colors"
             aria-label="Toggle navigation menu"
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -115,7 +115,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath, onNavigate }) => {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-b border-slate-200 bg-white px-4 pt-3 pb-5 space-y-3 shadow-lg animate-in slide-in-from-top-4 duration-200">
+        <div className="md:hidden border-b border-slate-200 bg-white/95 backdrop-blur-xl px-5 pt-3 pb-5 space-y-3 shadow-lg animate-in slide-in-from-top-4 duration-200">
           {navItems.map((item) => (
             <a
               key={item.label}

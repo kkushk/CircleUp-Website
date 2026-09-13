@@ -30,11 +30,11 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
     <div className="w-full bg-white text-slate-900 selection:bg-blue-100 selection:text-blue-900">
       
       {/* 1. HERO SECTION */}
-      <section className="relative pt-8 pb-16 md:pt-14 md:pb-24 overflow-hidden bg-gradient-to-b from-slate-50/90 via-white to-white border-b border-slate-100">
+      <section className="relative pt-10 pb-16 md:pt-16 md:pb-24 overflow-hidden bg-gradient-to-b from-slate-50/70 via-white to-white border-b border-slate-100">
         
         {/* Ambient background depth circles */}
-        <div className="absolute top-12 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-gradient-to-tr from-blue-500/5 via-sky-400/5 to-transparent rounded-full blur-3xl -z-10 pointer-events-none" />
-        <div className="absolute top-48 right-10 w-96 h-96 bg-blue-400/4 rounded-full blur-3xl -z-10 pointer-events-none" />
+        <div className="absolute top-8 left-1/2 -translate-x-1/2 w-[850px] h-[520px] bg-gradient-to-tr from-blue-500/8 via-sky-400/6 to-transparent rounded-full blur-3xl -z-10 pointer-events-none" />
+        <div className="absolute top-44 right-12 w-96 h-96 bg-blue-400/5 rounded-full blur-3xl -z-10 pointer-events-none" />
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
@@ -43,7 +43,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
               
               {/* Pill Badge */}
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-pill border border-slate-200/90 shadow-2xs">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-pill border border-slate-200/80 shadow-xs">
                 <span className="w-2 h-2 rounded-full bg-[#0066FF] animate-pulse" />
                 <span className="text-xs font-bold uppercase tracking-wider text-slate-800">
                   {SITE_CONFIG.heroSportsList}
@@ -62,25 +62,25 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               </p>
 
               {/* CTAs */}
-              <div className="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+              <div className="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5">
                 <a
                   href="#download"
-                  className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-2xl bg-slate-950 hover:bg-black text-white text-sm font-semibold tracking-wide transition-all shadow-md active:scale-98"
+                  className="w-full sm:w-auto inline-flex items-center justify-center px-7 py-3.5 rounded-2xl bg-slate-950 hover:bg-black text-white text-sm font-semibold tracking-wide transition-all shadow-md active:scale-98"
                 >
                   Download CircleUp
                 </a>
                 <a
                   href="#how-it-works"
-                  className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-2xl glass-box text-slate-800 hover:text-slate-950 hover:bg-white text-sm font-semibold transition-all border border-slate-200/80 active:scale-98"
+                  className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-2xl glass-box text-slate-800 hover:text-slate-950 hover:bg-white text-sm font-semibold transition-all border border-slate-200/80 active:scale-98 shadow-xs"
                 >
                   See how it works <ChevronRight className="w-4 h-4 ml-1 text-slate-400" />
                 </a>
               </div>
 
               {/* Value checklist */}
-              <div className="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-2 text-xs text-slate-500 font-medium">
+              <div className="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-2.5 text-xs text-slate-500 font-medium">
                 <span className="flex items-center gap-1.5">
-                  <Check className="w-3.5 h-3.5 text-[#0066FF]" /> Fast 30-second scheduling
+                  <Check className="w-3.5 h-3.5 text-[#0066FF]" /> 30-second scheduling
                 </span>
                 <span className="flex items-center gap-1.5">
                   <Check className="w-3.5 h-3.5 text-[#0066FF]" /> Multi-sport ready
@@ -106,47 +106,63 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
 
 
       {/* 2. PRODUCT PRINCIPLE SECTION */}
-      <section className="py-16 md:py-20 bg-white border-b border-slate-100">
+      <section className="py-16 md:py-24 bg-white border-b border-slate-100">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="glass-box p-8 sm:p-12 rounded-3xl border border-slate-200/90 shadow-sm text-center space-y-6">
+          <div className="glass-box p-8 sm:p-12 md:p-14 rounded-3xl border border-slate-200/85 shadow-sm text-center space-y-7">
             
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-inner-chip text-xs font-bold uppercase tracking-wider text-[#0066FF]">
-              <Sparkles className="w-3.5 h-3.5" /> Our Product Principle
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-inner-chip text-xs font-bold uppercase tracking-wider text-[#0066FF] shadow-2xs">
+              <Sparkles className="w-3.5 h-3.5 text-[#0066FF]" /> The Product Journey
             </div>
 
-            <div className="space-y-3 max-w-2xl mx-auto">
-              <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-950 tracking-tight leading-tight">
+            <div className="space-y-3 max-w-4xl mx-auto">
+              <h2 className="text-xl sm:text-3xl md:text-4xl font-extrabold text-slate-950 tracking-tight leading-tight sm:whitespace-nowrap">
                 "Think of someone you want to play with."
               </h2>
-              <p className="text-base sm:text-lg text-slate-600 font-medium">
-                CircleUp should make everything after that easy.
+              <p className="text-base sm:text-lg text-slate-600 font-normal">
+                CircleUp transforms that simple thought into a confirmed match in seconds.
               </p>
             </div>
 
             {/* Visual Sequence */}
-            <div className="pt-4 grid grid-cols-2 sm:grid-cols-4 gap-4 text-left">
-              <div className="p-5 sm:p-6 rounded-2xl glass-inner-chip flex flex-col justify-between space-y-3 border border-slate-200/70 hover:border-[#0066FF]/40 transition-colors">
+            <div className="pt-3 grid grid-cols-2 sm:grid-cols-5 gap-3.5 text-left">
+              <div className="p-4 sm:p-5 rounded-2xl glass-inner-chip flex flex-col justify-between space-y-3 border border-slate-200/75 hover:border-[#0066FF]/40 transition-colors">
                 <span className="text-xs sm:text-sm font-mono font-bold text-[#0066FF]">01</span>
-                <div className="text-base sm:text-lg md:text-xl font-extrabold text-slate-950 tracking-tight leading-snug">Pick the game</div>
-                <div className="text-xs sm:text-sm text-slate-500 font-medium">Sport & venue</div>
+                <div>
+                  <div className="text-sm sm:text-base font-extrabold text-slate-950 tracking-tight leading-snug">Choose Sport</div>
+                  <div className="text-[11px] sm:text-xs text-slate-500 font-medium mt-0.5">8+ sports supported</div>
+                </div>
               </div>
 
-              <div className="p-5 sm:p-6 rounded-2xl glass-inner-chip flex flex-col justify-between space-y-3 border border-slate-200/70 hover:border-[#0066FF]/40 transition-colors">
+              <div className="p-4 sm:p-5 rounded-2xl glass-inner-chip flex flex-col justify-between space-y-3 border border-slate-200/75 hover:border-[#0066FF]/40 transition-colors">
                 <span className="text-xs sm:text-sm font-mono font-bold text-[#0066FF]">02</span>
-                <div className="text-base sm:text-lg md:text-xl font-extrabold text-slate-950 tracking-tight leading-snug">Pick the time</div>
-                <div className="text-xs sm:text-sm text-slate-500 font-medium">Court or tee block</div>
+                <div>
+                  <div className="text-sm sm:text-base font-extrabold text-slate-950 tracking-tight leading-snug">Create Match</div>
+                  <div className="text-[11px] sm:text-xs text-slate-500 font-medium mt-0.5">Court, date, & time</div>
+                </div>
               </div>
 
-              <div className="p-5 sm:p-6 rounded-2xl glass-inner-chip flex flex-col justify-between space-y-3 border border-slate-200/70 hover:border-[#0066FF]/40 transition-colors">
+              <div className="p-4 sm:p-5 rounded-2xl glass-inner-chip flex flex-col justify-between space-y-3 border border-slate-200/75 hover:border-[#0066FF]/40 transition-colors">
                 <span className="text-xs sm:text-sm font-mono font-bold text-[#0066FF]">03</span>
-                <div className="text-base sm:text-lg md:text-xl font-extrabold text-slate-950 tracking-tight leading-snug">Pick the players</div>
-                <div className="text-xs sm:text-sm text-slate-500 font-medium">Your playing circle</div>
+                <div>
+                  <div className="text-sm sm:text-base font-extrabold text-slate-950 tracking-tight leading-snug">Invite Players</div>
+                  <div className="text-[11px] sm:text-xs text-slate-500 font-medium mt-0.5">Friends, SMS, or email</div>
+                </div>
               </div>
 
-              <div className="p-5 sm:p-6 rounded-2xl bg-slate-950 text-white flex flex-col justify-between space-y-3 shadow-md border border-slate-800">
+              <div className="p-4 sm:p-5 rounded-2xl glass-inner-chip flex flex-col justify-between space-y-3 border border-slate-200/75 hover:border-[#0066FF]/40 transition-colors">
                 <span className="text-xs sm:text-sm font-mono font-bold text-[#0066FF]">04</span>
-                <div className="text-base sm:text-lg md:text-xl font-extrabold text-white tracking-tight leading-snug">Play</div>
-                <div className="text-xs sm:text-sm text-slate-300 font-medium">Ready to go</div>
+                <div>
+                  <div className="text-sm sm:text-base font-extrabold text-slate-950 tracking-tight leading-snug">Confirmations</div>
+                  <div className="text-[11px] sm:text-xs text-slate-500 font-medium mt-0.5">Auto-lock & calendar</div>
+                </div>
+              </div>
+
+              <div className="col-span-2 sm:col-span-1 p-4 sm:p-5 rounded-2xl bg-slate-950 text-white flex flex-col justify-between space-y-3 shadow-md border border-slate-800">
+                <span className="text-xs sm:text-sm font-mono font-bold text-[#0066FF]">05</span>
+                <div>
+                  <div className="text-sm sm:text-base font-extrabold text-white tracking-tight leading-snug">Play Game</div>
+                  <div className="text-[11px] sm:text-xs text-slate-300 font-medium mt-0.5">Ready on the court</div>
+                </div>
               </div>
             </div>
 
@@ -478,13 +494,13 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
         {/* Soft background glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
 
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8 relative z-10">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8 relative z-10">
           
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm sm:text-base font-bold bg-white/10 text-slate-100 border border-white/20 backdrop-blur-md shadow-sm">
             Long-Term Vision
           </div>
 
-          <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight text-white leading-[1.08]">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight sm:whitespace-nowrap">
             The scheduling engine for sports.
           </h2>
 
@@ -511,13 +527,13 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
 
       {/* 12. DOWNLOAD CALL TO ACTION */}
       <section id="download" className="py-20 md:py-28 bg-gradient-to-b from-white to-slate-50/70 text-center">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="glass-box p-10 sm:p-14 rounded-3xl space-y-6 border border-slate-200/90 shadow-md">
-            <div className="flex justify-center">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="glass-box p-8 sm:p-12 md:p-14 rounded-3xl space-y-6 border border-slate-200/90 shadow-md flex flex-col items-center text-center">
+            <div className="flex justify-center w-full">
               <Logo size="xl" showWordmark={true} />
             </div>
             
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-950 tracking-tight">
+            <h2 className="w-full text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight sm:whitespace-nowrap -translate-x-3 sm:-translate-x-5">
               Ready to schedule your next match?
             </h2>
             
@@ -525,11 +541,11 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               Download CircleUp and spend less time coordinating and more time playing.
             </p>
             
-            <div className="pt-4 flex justify-center">
+            <div className="pt-4 flex justify-center w-full">
               <AppButtons size="large" theme="dark" />
             </div>
             
-            <div className="pt-2 text-xs text-slate-500 flex items-center justify-center gap-4">
+            <div className="pt-2 text-xs text-slate-500 flex items-center justify-center gap-4 w-full">
               <span>Available for iOS and Android</span>
               <span>•</span>
               <button onClick={() => onNavigate('/support')} className="text-[#0066FF] hover:underline font-medium">
