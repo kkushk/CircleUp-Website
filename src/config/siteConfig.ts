@@ -6,7 +6,7 @@ export const SITE_CONFIG = {
   
   // App store links
   appStoreUrl: 'https://apps.apple.com/us/app/circle-up-book/id6760900749',
-  googlePlayUrl: 'https://play.google.com/store/apps/developer?id=Circle+UP+Book',
+  googlePlayUrl: 'https://play.google.com/store/apps/details?id=com.circleupapp&hl=en_US',
   
   // Legal publication effective date
   effectiveDate: 'August 21, 2026',

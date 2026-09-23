@@ -69,7 +69,7 @@ export const InvitePage: React.FC<InvitePageProps> = ({ onNavigate }) => {
               
               {/* Apple App Store */}
               <a
-                href="https://apps.apple.com"
+                href={SITE_CONFIG.appStoreUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-3 py-3.5 px-5 rounded-2xl bg-slate-950 hover:bg-slate-800 text-white font-semibold text-sm transition-all shadow-md active:scale-98"
@@ -83,7 +83,7 @@ export const InvitePage: React.FC<InvitePageProps> = ({ onNavigate }) => {
 
               {/* Google Play */}
               <a
-                href="https://play.google.com"
+                href={SITE_CONFIG.googlePlayUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-3 py-3.5 px-5 rounded-2xl bg-[#0066FF] hover:bg-blue-600 text-white font-semibold text-sm transition-all shadow-md active:scale-98"
