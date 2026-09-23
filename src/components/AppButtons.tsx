@@ -35,14 +35,14 @@ export const AppButtons: React.FC<AppButtonsProps> = ({
 
   return (
     <>
-      <div className={`flex flex-wrap items-center gap-3 ${className}`}>
+      <div className={`flex flex-col sm:flex-row items-center justify-center gap-3 w-full sm:w-auto ${className}`}>
         {/* App Store Button */}
         <a
           href={SITE_CONFIG.appStoreUrl || '#download'}
           target="_blank"
           rel="noopener noreferrer"
           onClick={(e) => handleClick(e, SITE_CONFIG.appStoreUrl, 'App Store')}
-          className={`inline-flex items-center ${containerClasses} ${baseButtonClass}`}
+          className={`w-full sm:w-auto justify-center inline-flex items-center ${containerClasses} ${baseButtonClass}`}
           aria-label="Download CircleUp on the App Store"
         >
           {/* Apple Logo SVG */}
@@ -65,7 +65,7 @@ export const AppButtons: React.FC<AppButtonsProps> = ({
           target="_blank"
           rel="noopener noreferrer"
           onClick={(e) => handleClick(e, SITE_CONFIG.googlePlayUrl, 'Google Play')}
-          className={`inline-flex items-center ${containerClasses} ${baseButtonClass}`}
+          className={`w-full sm:w-auto justify-center inline-flex items-center ${containerClasses} ${baseButtonClass}`}
           aria-label="Get CircleUp on Google Play"
         >
           {/* Google Play Logo SVG */}

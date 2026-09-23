@@ -88,7 +88,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath, onNavigate }) => {
           <a
             href="/#download"
             onClick={(e) => handleNavClick('/#download', e)}
-            className="ml-2 inline-flex items-center justify-center px-4 py-2 rounded-full bg-slate-950 hover:bg-black text-white text-xs font-semibold tracking-wide transition-all shadow-xs active:scale-95"
+            className="ml-2 inline-flex items-center justify-center px-4 py-2 rounded-full bg-[#0066FF] hover:bg-[#0052cc] text-white text-xs font-bold tracking-wide transition-all shadow-sm shadow-blue-500/20 active:scale-95"
           >
             Download
           </a>
@@ -115,17 +115,34 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath, onNavigate }) => {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-b border-slate-200 bg-white/95 backdrop-blur-xl px-5 pt-3 pb-5 space-y-3 shadow-lg animate-in slide-in-from-top-4 duration-200">
-          {navItems.map((item) => (
+        <div className="md:hidden border-b border-slate-200/90 bg-white/95 backdrop-blur-2xl px-4 pt-2.5 pb-5 space-y-1 shadow-xl animate-in slide-in-from-top-2 duration-200">
+          {navItems.map((item) => {
+            const isActive = currentPath === item.href;
+            return (
+              <a
+                key={item.label}
+                href={item.href}
+                onClick={(e) => handleNavClick(item.href, e)}
+                className={`flex items-center justify-between px-3.5 py-2.5 rounded-xl text-sm font-semibold transition-colors ${
+                  isActive 
+                    ? 'bg-blue-50 text-[#0066FF]' 
+                    : 'text-slate-700 hover:text-slate-950 hover:bg-slate-100/70'
+                }`}
+              >
+                <span>{item.label}</span>
+                <span className="text-slate-400 text-xs">→</span>
+              </a>
+            );
+          })}
+          <div className="pt-2">
             <a
-              key={item.label}
-              href={item.href}
-              onClick={(e) => handleNavClick(item.href, e)}
-              className="block py-2 text-base font-medium text-slate-700 hover:text-slate-950 border-b border-slate-100 last:border-0"
+              href="/#download"
+              onClick={(e) => handleNavClick('/#download', e)}
+              className="w-full inline-flex items-center justify-center py-2.5 rounded-xl bg-[#0066FF] hover:bg-[#0052cc] text-white text-sm font-bold shadow-md shadow-blue-500/20 active:scale-98 transition-all"
             >
-              {item.label}
+              Download CircleUp App
             </a>
-          ))}
+          </div>
         </div>
       )}
     </header>

@@ -30,9 +30,9 @@ export const FeaturesGrid: React.FC = () => {
       id: 'multi-sport',
       title: 'Multi-Sport Scheduling',
       category: 'Coverage',
-      description: 'Easily organize Squash, SDA Doubles, Tennis, Padel, Pickleball, Badminton, Table Tennis, and Golf all from a single unified account.',
+      description: 'Easily organize Squash, SDA Doubles, Tennis, Padel, Platform Tennis, Pickleball, Badminton, and Golf all from a single unified account.',
       icon: Layers,
-      badge: '8+ Sports'
+      badge: '7+ Sports'
     },
     {
       id: 'singles-doubles',
@@ -94,9 +94,9 @@ export const FeaturesGrid: React.FC = () => {
       id: 'preferred-side',
       title: 'Preferred Side (Wall/Court)',
       category: 'Sport-Specific',
-      description: 'SDA doubles players can set left-wall or right-wall preferences; tennis and padel players can select deuce or ad side.',
+      description: 'SDA doubles players can set left-wall or right-wall preferences; tennis and padel players can easily choose their preferred left side or right side.',
       icon: Layers,
-      badge: 'Left / Right Wall'
+      badge: 'Left / Right Side'
     },
     {
       id: 'smart-notifications',
@@ -129,42 +129,42 @@ export const FeaturesGrid: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
-        <div className="max-w-3xl mx-auto text-center space-y-4 mb-16">
+        <div className="max-w-3xl mx-auto text-center space-y-3 sm:space-y-4 mb-10 sm:mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-pill text-xs font-bold uppercase tracking-wider text-[#0066FF] shadow-2xs">
             <Sparkles className="w-3.5 h-3.5 text-[#0066FF]" /> Complete Feature Engine
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-950 tracking-tight">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-slate-950 tracking-tight">
             Engineered for how <br className="hidden sm:inline" />
             athletes actually organize.
           </h2>
-          <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
-            Everything you need to create, invite, confirm, and play—without bloated spreadsheets or messy group chat threads.
+          <p className="text-sm sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
+            Everything you need to create, invite, confirm, and play without bloated spreadsheets or messy group chat threads.
           </p>
         </div>
 
         {/* 12-Feature Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-6">
           {features.map((f) => {
             const Icon = f.icon;
             return (
               <div 
                 key={f.id}
-                className="p-6 sm:p-7 rounded-3xl glass-box glass-box-hover flex flex-col justify-between space-y-4 border border-slate-200/80"
+                className="p-5 sm:p-7 rounded-2xl sm:rounded-3xl glass-box glass-box-hover flex flex-col justify-between space-y-3 sm:space-y-4 border border-slate-200/80"
               >
                 <div>
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="w-10 h-10 rounded-2xl bg-slate-950 text-white flex items-center justify-center shadow-xs">
-                      <Icon className="w-5 h-5 text-white" />
+                  <div className="flex items-center justify-between mb-3 sm:mb-4">
+                    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl sm:rounded-2xl bg-slate-950 text-white flex items-center justify-center shadow-xs">
+                      <Icon className="w-4.5 h-4.5 sm:w-5 sm:h-5 text-white" />
                     </div>
-                    <span className="text-[11px] font-semibold px-2.5 py-1 rounded-full glass-inner-chip text-slate-600">
+                    <span className="text-[10px] sm:text-[11px] font-semibold px-2.5 py-0.5 sm:py-1 rounded-full glass-inner-chip text-slate-600">
                       {f.badge}
                     </span>
                   </div>
 
-                  <div className="text-[11px] font-bold uppercase tracking-wider text-[#0066FF]">
+                  <div className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-[#0066FF]">
                     {f.category}
                   </div>
-                  <h3 className="text-lg font-bold text-slate-950 mt-1 mb-2">
+                  <h3 className="text-base sm:text-lg font-bold text-slate-950 mt-1 mb-1.5 sm:mb-2">
                     {f.title}
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -172,7 +172,7 @@ export const FeaturesGrid: React.FC = () => {
                   </p>
                 </div>
 
-                <div className="pt-3 border-t border-slate-100/80 flex items-center gap-1.5 text-[11px] font-medium text-slate-500">
+                <div className="pt-2.5 sm:pt-3 border-t border-slate-100/80 flex items-center gap-1.5 text-[10px] sm:text-[11px] font-medium text-slate-500">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
                   <span>Available in CircleUp Mobile</span>
                 </div>

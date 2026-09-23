@@ -44,7 +44,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           </p>
 
           <p>
-            Built for the way athletes actually play. Starting from squash and doubles, and expanding across racquet sports, golf, and beyond—CircleUp brings match scheduling into one place so athletes spend less time coordinating and more time playing.
+            Built for the way athletes actually play. Starting from squash and doubles, and expanding across racquet sports, golf, and beyond, CircleUp brings match scheduling into one place so athletes spend less time coordinating and more time playing.
           </p>
 
           <p>

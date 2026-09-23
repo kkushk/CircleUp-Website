@@ -30,7 +30,7 @@ export const SmsConsentPage: React.FC<SmsConsentPageProps> = ({ onNavigate }) =>
           <Logo size="sm" showWordmark={false} />
         </div>
 
-        {/* SECTION 1 — PUBLIC PAGE REQUIREMENTS */}
+        {/* SECTION 1 : PUBLIC PAGE REQUIREMENTS */}
         <div className="border-b border-slate-200 pb-8 mb-12 space-y-4">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-[#0066FF] border border-blue-100 text-xs font-bold uppercase tracking-wider">
             <Shield className="w-3.5 h-3.5" /> Public Consent-Flow Evidence
@@ -57,7 +57,7 @@ export const SmsConsentPage: React.FC<SmsConsentPageProps> = ({ onNavigate }) =>
           </div>
         </div>
 
-        {/* SECTION 2 — PROGRAM DESCRIPTION */}
+        {/* SECTION 2 : PROGRAM DESCRIPTION */}
         <section className="mb-16 space-y-6">
           <div className="border-b border-slate-200 pb-3">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-950 tracking-tight">
@@ -102,7 +102,7 @@ export const SmsConsentPage: React.FC<SmsConsentPageProps> = ({ onNavigate }) =>
           </div>
         </section>
 
-        {/* SECTION 3 — HOW THE GUEST PROVIDES WRITTEN CONSENT */}
+        {/* SECTION 3 : HOW THE GUEST PROVIDES WRITTEN CONSENT */}
         <section className="mb-16 space-y-6">
           <div className="border-b border-slate-200 pb-3">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-950 tracking-tight">
@@ -164,7 +164,7 @@ export const SmsConsentPage: React.FC<SmsConsentPageProps> = ({ onNavigate }) =>
           </div>
         </section>
 
-        {/* SECTION 4 — RESPONSIBILITY FOR GUEST CONSENT */}
+        {/* SECTION 4 : RESPONSIBILITY FOR GUEST CONSENT */}
         <section className="mb-16 space-y-6">
           <div className="border-b border-slate-200 pb-3">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-950 tracking-tight">
@@ -188,7 +188,7 @@ export const SmsConsentPage: React.FC<SmsConsentPageProps> = ({ onNavigate }) =>
           </div>
         </section>
 
-        {/* SECTION 5 — IN-APP SMS CONSENT CONFIRMATION */}
+        {/* SECTION 5 : IN-APP SMS CONSENT CONFIRMATION */}
         <section className="mb-16 space-y-6">
           <div className="border-b border-slate-200 pb-3">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-950 tracking-tight">
@@ -221,7 +221,7 @@ export const SmsConsentPage: React.FC<SmsConsentPageProps> = ({ onNavigate }) =>
           </div>
         </section>
 
-        {/* SECTION 6 — PRODUCTION APP CONSENT INTERFACE */}
+        {/* SECTION 6 : PRODUCTION APP CONSENT INTERFACE */}
         <section className="mb-16 space-y-6">
           <div className="border-b border-slate-200 pb-3">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-950 tracking-tight">
@@ -257,7 +257,7 @@ export const SmsConsentPage: React.FC<SmsConsentPageProps> = ({ onNavigate }) =>
           </div>
         </section>
 
-        {/* SECTION 7 — SMS CONFIRMATION BEHAVIOR */}
+        {/* SECTION 7 : SMS CONFIRMATION BEHAVIOR */}
         <section className="mb-16 space-y-6">
           <div className="border-b border-slate-200 pb-3">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-950 tracking-tight">
@@ -323,7 +323,7 @@ export const SmsConsentPage: React.FC<SmsConsentPageProps> = ({ onNavigate }) =>
           </div>
         </section>
 
-        {/* SECTION 8 — ACTUAL APPLICATION SCREENSHOTS */}
+        {/* SECTION 8 : ACTUAL APPLICATION SCREENSHOTS */}
         <section className="mb-16 space-y-8">
           <div className="border-b border-slate-200 pb-3">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-950 tracking-tight">
@@ -383,7 +383,7 @@ export const SmsConsentPage: React.FC<SmsConsentPageProps> = ({ onNavigate }) =>
           </div>
         </section>
 
-        {/* SECTION 11 — REGISTERED CAMPAIGN SAMPLE MESSAGE */}
+        {/* SECTION 11 : REGISTERED CAMPAIGN SAMPLE MESSAGE */}
         <section className="mb-16 space-y-6">
           <div className="border-b border-slate-200 pb-3">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-950 tracking-tight">
@@ -410,7 +410,7 @@ export const SmsConsentPage: React.FC<SmsConsentPageProps> = ({ onNavigate }) =>
           </div>
         </section>
 
-        {/* SECTION 12 — SMS OPERATING RULES */}
+        {/* SECTION 12 : SMS OPERATING RULES */}
         <section className="mb-16 space-y-6">
           <div className="border-b border-slate-200 pb-3">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-950 tracking-tight">
@@ -463,7 +463,7 @@ export const SmsConsentPage: React.FC<SmsConsentPageProps> = ({ onNavigate }) =>
           </div>
         </section>
 
-        {/* SECTION 13 — SMS PROGRAM SPECIFICATIONS */}
+        {/* SECTION 13 : SMS PROGRAM SPECIFICATIONS */}
         <section className="mb-16 space-y-6">
           <div className="border-b border-slate-200 pb-3">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-950 tracking-tight">
@@ -527,7 +527,7 @@ export const SmsConsentPage: React.FC<SmsConsentPageProps> = ({ onNavigate }) =>
           </div>
         </section>
 
-        {/* SECTION 14 — CONSENT CONFIRMATION RECORDS */}
+        {/* SECTION 14 : CONSENT CONFIRMATION RECORDS */}
         <section className="mb-16 space-y-4">
           <div className="border-b border-slate-200 pb-3">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-950 tracking-tight">
@@ -545,7 +545,7 @@ export const SmsConsentPage: React.FC<SmsConsentPageProps> = ({ onNavigate }) =>
           </div>
         </section>
 
-        {/* SECTION 15 — CAMPAIGN INFORMATION */}
+        {/* SECTION 15 : CAMPAIGN INFORMATION */}
         <section className="mb-16 space-y-6">
           <div className="border-b border-slate-200 pb-3">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-950 tracking-tight">

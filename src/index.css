@@ -11,6 +11,15 @@
     --circleup-gray-muted: #596171;
     --circleup-gray-border: #e2e8f0;
     --circleup-gray-bg: #f8fafc;
+    
+    /* Squash.tv Broadcast Palette */
+    --squash-navy-deep: #000d2a;
+    --squash-navy-card: #061538;
+    --squash-navy-elevated: #081e51;
+    --squash-navy-border: #1d2d5b;
+    --squash-accent-green: #39d078;
+    --squash-accent-gold: #fcae20;
+    --squash-text-muted: #8e9cbc;
   }
 
   html {
@@ -49,11 +58,33 @@
 }
 
 .glass-box-dark {
-  background: rgba(15, 23, 42, 0.82);
+  background: rgba(6, 21, 56, 0.88);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 16px 40px -8px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(64, 79, 154, 0.35);
+  box-shadow: 0 20px 48px -10px rgba(0, 13, 42, 0.7);
+}
+
+.squash-badge-live {
+  background: rgba(57, 208, 120, 0.12);
+  border: 1px solid rgba(57, 208, 120, 0.35);
+  color: #39d078;
+}
+
+.squash-card-navy {
+  background: linear-gradient(180deg, rgba(8, 30, 81, 0.9) 0%, rgba(6, 21, 56, 0.95) 100%);
+  border: 1px solid rgba(64, 79, 154, 0.35);
+  box-shadow: 0 16px 40px -8px rgba(0, 13, 42, 0.55);
+}
+
+.squash-card-navy-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.squash-card-navy-hover:hover {
+  border-color: rgba(57, 208, 120, 0.6);
+  box-shadow: 0 20px 48px -8px rgba(0, 13, 42, 0.7), 0 0 24px -4px rgba(57, 208, 120, 0.15);
+  transform: translateY(-2px);
 }
 
 .glass-pill {

@@ -42,61 +42,66 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             {/* Left Narrative */}
             <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
               
-              {/* Pill Badge */}
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-pill border border-slate-200/80 shadow-xs">
-                <span className="w-2 h-2 rounded-full bg-[#0066FF] animate-pulse" />
-                <span className="text-xs font-bold uppercase tracking-wider text-slate-800">
-                  {SITE_CONFIG.heroSportsList}
-                </span>
+              {/* Squash.tv Inspired Broadcast Live Badge - Moved to left, no truncation so Golf is completely visible */}
+              <div className="flex justify-start text-left lg:-ml-1 overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1.5 rounded-full bg-[#061538] border border-[#1d2d5b] shadow-xs text-left shrink-0">
+                  <span className="relative flex h-2 w-2 shrink-0">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#39d078] opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[#39d078]"></span>
+                  </span>
+                  <span className="text-[10px] sm:text-[11px] font-mono font-extrabold uppercase tracking-wider text-slate-100 whitespace-nowrap">
+                    LIVE ENGINE <span className="text-[#39d078]">•</span> {SITE_CONFIG.heroSportsList}
+                  </span>
+                </div>
               </div>
 
-              {/* Main Headline */}
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-950 leading-[1.08] text-balance">
-                Schedule the game. <br className="hidden sm:inline" />
-                <span className="text-[#0066FF]">Skip the group chat.</span>
+              {/* Main Headline - Schedule the game on line 1, Skip the group chat on line 2 */}
+              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-950 leading-[1.14]">
+                <span className="block">Schedule the game.</span>
+                <span className="block text-[#0066FF]">Skip the group chat.</span>
               </h1>
 
               {/* Subheadline */}
-              <p className="text-lg sm:text-xl text-slate-600 font-normal leading-relaxed max-w-xl mx-auto lg:mx-0">
+              <p className="text-base sm:text-xl text-slate-600 font-normal leading-relaxed max-w-xl mx-auto lg:mx-0">
                 {SITE_CONFIG.heroSubheadline}
               </p>
 
               {/* CTAs */}
-              <div className="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5">
+              <div className="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 w-full max-w-xs sm:max-w-none mx-auto lg:mx-0">
                 <a
                   href="#download"
-                  className="w-full sm:w-auto inline-flex items-center justify-center px-7 py-3.5 rounded-2xl bg-slate-950 hover:bg-black text-white text-sm font-semibold tracking-wide transition-all shadow-md active:scale-98"
+                  className="w-full sm:w-auto inline-flex items-center justify-center px-7 py-3.5 rounded-2xl bg-[#0066FF] hover:bg-[#0052cc] text-white text-sm font-bold tracking-wide transition-all shadow-lg shadow-blue-500/20 active:scale-98 cursor-pointer"
                 >
                   Download CircleUp
                 </a>
                 <a
                   href="#how-it-works"
-                  className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-2xl glass-box text-slate-800 hover:text-slate-950 hover:bg-white text-sm font-semibold transition-all border border-slate-200/80 active:scale-98 shadow-xs"
+                  className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-2xl bg-white hover:bg-slate-50 text-slate-900 text-sm font-bold transition-all border border-slate-300 active:scale-98 shadow-sm cursor-pointer"
                 >
                   See how it works <ChevronRight className="w-4 h-4 ml-1 text-slate-400" />
                 </a>
               </div>
 
               {/* Value checklist */}
-              <div className="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-2.5 text-xs text-slate-500 font-medium">
+              <div className="pt-2 grid grid-cols-2 sm:flex sm:flex-wrap items-center justify-center lg:justify-start gap-x-4 gap-y-2 text-xs text-slate-500 font-medium max-w-xs sm:max-w-none mx-auto lg:mx-0">
                 <span className="flex items-center gap-1.5">
-                  <Check className="w-3.5 h-3.5 text-[#0066FF]" /> 30-second scheduling
+                  <Check className="w-3.5 h-3.5 text-[#0066FF] shrink-0" /> 30-sec scheduling
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <Check className="w-3.5 h-3.5 text-[#0066FF]" /> Multi-sport ready
+                  <Check className="w-3.5 h-3.5 text-[#0066FF] shrink-0" /> Multi-sport ready
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <Check className="w-3.5 h-3.5 text-[#0066FF]" /> Automatic confirmation
+                  <Check className="w-3.5 h-3.5 text-[#0066FF] shrink-0" /> Auto confirmation
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <Check className="w-3.5 h-3.5 text-[#0066FF]" /> Direct calendar sync
+                  <Check className="w-3.5 h-3.5 text-[#0066FF] shrink-0" /> Calendar sync
                 </span>
               </div>
 
             </div>
 
-            {/* Right Phone Mockup Preview with 5 Glass Floating Elements */}
-            <div className="lg:col-span-5 flex justify-center">
+            {/* Right Phone Mockup Preview */}
+            <div className="lg:col-span-5 flex justify-center overflow-visible">
               <HeroVisual />
             </div>
 
@@ -106,62 +111,66 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
 
 
       {/* 2. PRODUCT PRINCIPLE SECTION */}
-      <section className="py-16 md:py-24 bg-white border-b border-slate-100">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="glass-box p-8 sm:p-12 md:p-14 rounded-3xl border border-slate-200/85 shadow-sm text-center space-y-7">
+      <section className="py-16 md:py-24 bg-[#000d2a] text-white border-b border-[#1d2d5b] relative overflow-hidden">
+        {/* Subtle tournament court lighting ambient */}
+        <div className="absolute top-0 right-1/4 w-[500px] h-[300px] bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-0 left-1/4 w-[400px] h-[250px] bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
+
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="squash-card-navy p-5 sm:p-10 md:p-14 rounded-2xl sm:rounded-3xl border border-[#1d2d5b] shadow-2xl text-center space-y-6 sm:space-y-7">
             
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-inner-chip text-xs font-bold uppercase tracking-wider text-[#0066FF] shadow-2xs">
-              <Sparkles className="w-3.5 h-3.5 text-[#0066FF]" /> The Product Journey
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#081e51] text-xs font-mono font-bold uppercase tracking-wider text-[#39d078] border border-[#404f9a]/50 shadow-inner">
+              <Sparkles className="w-3.5 h-3.5 text-[#39d078]" /> The Product Journey
             </div>
 
-            <div className="space-y-3 max-w-4xl mx-auto">
-              <h2 className="text-xl sm:text-3xl md:text-4xl font-extrabold text-slate-950 tracking-tight leading-tight sm:whitespace-nowrap">
+            <div className="space-y-2 sm:space-y-3 max-w-4xl mx-auto">
+              <h2 className="text-xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight leading-tight">
                 "Think of someone you want to play with."
               </h2>
-              <p className="text-base sm:text-lg text-slate-600 font-normal">
+              <p className="text-sm sm:text-lg text-[#8e9cbc] font-normal">
                 CircleUp transforms that simple thought into a confirmed match in seconds.
               </p>
             </div>
 
             {/* Visual Sequence */}
-            <div className="pt-3 grid grid-cols-2 sm:grid-cols-5 gap-3.5 text-left">
-              <div className="p-4 sm:p-5 rounded-2xl glass-inner-chip flex flex-col justify-between space-y-3 border border-slate-200/75 hover:border-[#0066FF]/40 transition-colors">
-                <span className="text-xs sm:text-sm font-mono font-bold text-[#0066FF]">01</span>
+            <div className="pt-2 sm:pt-3 grid grid-cols-2 sm:grid-cols-5 gap-2.5 sm:gap-3.5 text-left">
+              <div className="p-3.5 sm:p-5 rounded-xl sm:rounded-2xl bg-[#061538]/90 flex flex-col justify-between space-y-2.5 sm:space-y-3 border border-[#1d2d5b] hover:border-[#39d078]/60 transition-colors">
+                <span className="text-xs sm:text-sm font-mono font-bold text-[#39d078]">01</span>
                 <div>
-                  <div className="text-sm sm:text-base font-extrabold text-slate-950 tracking-tight leading-snug">Choose Sport</div>
-                  <div className="text-[11px] sm:text-xs text-slate-500 font-medium mt-0.5">8+ sports supported</div>
+                  <div className="text-xs sm:text-base font-extrabold text-white tracking-tight leading-snug">Choose Sport</div>
+                  <div className="text-[10px] sm:text-xs text-[#8e9cbc] font-medium mt-0.5">8+ sports supported</div>
                 </div>
               </div>
 
-              <div className="p-4 sm:p-5 rounded-2xl glass-inner-chip flex flex-col justify-between space-y-3 border border-slate-200/75 hover:border-[#0066FF]/40 transition-colors">
-                <span className="text-xs sm:text-sm font-mono font-bold text-[#0066FF]">02</span>
+              <div className="p-3.5 sm:p-5 rounded-xl sm:rounded-2xl bg-[#061538]/90 flex flex-col justify-between space-y-2.5 sm:space-y-3 border border-[#1d2d5b] hover:border-[#39d078]/60 transition-colors">
+                <span className="text-xs sm:text-sm font-mono font-bold text-[#39d078]">02</span>
                 <div>
-                  <div className="text-sm sm:text-base font-extrabold text-slate-950 tracking-tight leading-snug">Create Match</div>
-                  <div className="text-[11px] sm:text-xs text-slate-500 font-medium mt-0.5">Court, date, & time</div>
+                  <div className="text-xs sm:text-base font-extrabold text-white tracking-tight leading-snug">Create Match</div>
+                  <div className="text-[10px] sm:text-xs text-[#8e9cbc] font-medium mt-0.5">Court, date, & time</div>
                 </div>
               </div>
 
-              <div className="p-4 sm:p-5 rounded-2xl glass-inner-chip flex flex-col justify-between space-y-3 border border-slate-200/75 hover:border-[#0066FF]/40 transition-colors">
-                <span className="text-xs sm:text-sm font-mono font-bold text-[#0066FF]">03</span>
+              <div className="p-3.5 sm:p-5 rounded-xl sm:rounded-2xl bg-[#061538]/90 flex flex-col justify-between space-y-2.5 sm:space-y-3 border border-[#1d2d5b] hover:border-[#39d078]/60 transition-colors">
+                <span className="text-xs sm:text-sm font-mono font-bold text-[#39d078]">03</span>
                 <div>
-                  <div className="text-sm sm:text-base font-extrabold text-slate-950 tracking-tight leading-snug">Invite Players</div>
-                  <div className="text-[11px] sm:text-xs text-slate-500 font-medium mt-0.5">Friends, SMS, or email</div>
+                  <div className="text-xs sm:text-base font-extrabold text-white tracking-tight leading-snug">Invite Players</div>
+                  <div className="text-[10px] sm:text-xs text-[#8e9cbc] font-medium mt-0.5">Friends, SMS, or email</div>
                 </div>
               </div>
 
-              <div className="p-4 sm:p-5 rounded-2xl glass-inner-chip flex flex-col justify-between space-y-3 border border-slate-200/75 hover:border-[#0066FF]/40 transition-colors">
-                <span className="text-xs sm:text-sm font-mono font-bold text-[#0066FF]">04</span>
+              <div className="p-3.5 sm:p-5 rounded-xl sm:rounded-2xl bg-[#061538]/90 flex flex-col justify-between space-y-2.5 sm:space-y-3 border border-[#1d2d5b] hover:border-[#39d078]/60 transition-colors">
+                <span className="text-xs sm:text-sm font-mono font-bold text-[#39d078]">04</span>
                 <div>
-                  <div className="text-sm sm:text-base font-extrabold text-slate-950 tracking-tight leading-snug">Confirmations</div>
-                  <div className="text-[11px] sm:text-xs text-slate-500 font-medium mt-0.5">Auto-lock & calendar</div>
+                  <div className="text-xs sm:text-base font-extrabold text-white tracking-tight leading-snug">Confirmations</div>
+                  <div className="text-[10px] sm:text-xs text-[#8e9cbc] font-medium mt-0.5">Auto-lock & calendar</div>
                 </div>
               </div>
 
-              <div className="col-span-2 sm:col-span-1 p-4 sm:p-5 rounded-2xl bg-slate-950 text-white flex flex-col justify-between space-y-3 shadow-md border border-slate-800">
-                <span className="text-xs sm:text-sm font-mono font-bold text-[#0066FF]">05</span>
+              <div className="col-span-2 sm:col-span-1 p-3.5 sm:p-5 rounded-xl sm:rounded-2xl bg-[#0066FF] text-white flex flex-col justify-between space-y-2.5 sm:space-y-3 shadow-lg border border-blue-400/40">
+                <span className="text-xs sm:text-sm font-mono font-bold text-white">05</span>
                 <div>
-                  <div className="text-sm sm:text-base font-extrabold text-white tracking-tight leading-snug">Play Game</div>
-                  <div className="text-[11px] sm:text-xs text-slate-300 font-medium mt-0.5">Ready on the court</div>
+                  <div className="text-xs sm:text-base font-extrabold text-white tracking-tight leading-snug">Play Game</div>
+                  <div className="text-[10px] sm:text-xs text-blue-100 font-medium mt-0.5">Ready on the court</div>
                 </div>
               </div>
             </div>
@@ -196,66 +205,66 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
             
             {/* Left: The Coordination Friction */}
-            <div className="p-8 sm:p-10 rounded-3xl glass-box border border-red-100/80 bg-red-50/20 space-y-6 flex flex-col justify-between">
-              <div className="space-y-4">
+            <div className="p-5 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl glass-box border border-red-100/80 bg-red-50/20 space-y-5 sm:space-y-6 flex flex-col justify-between">
+              <div className="space-y-3 sm:space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-bold uppercase tracking-wider text-rose-600">
+                  <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-rose-600">
                     The Coordination Friction
                   </span>
-                  <span className="text-xs px-2.5 py-1 rounded-full bg-rose-100/70 text-rose-700 font-semibold">
+                  <span className="text-[10px] sm:text-xs px-2.5 py-0.5 sm:py-1 rounded-full bg-rose-100/70 text-rose-700 font-semibold">
                     Fragmented
                   </span>
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold text-slate-950">
+                <h3 className="text-lg sm:text-2xl font-bold text-slate-950">
                   Texts, WhatsApp, emails, and forgotten replies.
                 </h3>
-                <p className="text-sm text-slate-600 leading-relaxed">
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Someone wants to play. They message several people. Some are busy. Someone responds late. Someone drops out last minute. Another person needs to be found. A simple game creates far too much coordination.
                 </p>
               </div>
 
-              <div className="space-y-2.5 pt-4 border-t border-rose-100/60 font-mono text-xs">
-                <div className="p-3 rounded-xl bg-white/80 border border-slate-200/60 text-slate-700 shadow-2xs">
+              <div className="space-y-2 pt-3 sm:pt-4 border-t border-rose-100/60 font-mono text-xs">
+                <div className="p-2.5 sm:p-3 rounded-xl bg-white/80 border border-slate-200/60 text-slate-700 shadow-2xs">
                   "Hey who's around Thursday at 6pm for doubles?"
                 </div>
-                <div className="p-3 rounded-xl bg-white/80 border border-slate-200/60 text-slate-700 shadow-2xs">
+                <div className="p-2.5 sm:p-3 rounded-xl bg-white/80 border border-slate-200/60 text-slate-700 shadow-2xs">
                   "I can only do 6:30. Is Mark playing on the left?"
                 </div>
-                <div className="p-3 rounded-xl bg-white/80 border border-slate-200/60 text-rose-700 shadow-2xs">
-                  "Sorry guys, something came up—need 1 more!"
+                <div className="p-2.5 sm:p-3 rounded-xl bg-white/80 border border-slate-200/60 text-rose-700 shadow-2xs">
+                  "Sorry guys, something came up, need 1 more!"
                 </div>
               </div>
             </div>
 
             {/* Right: The CircleUp Solution */}
-            <div className="p-8 sm:p-10 rounded-3xl glass-box border border-blue-100/90 bg-blue-50/20 space-y-6 flex flex-col justify-between">
-              <div className="space-y-4">
+            <div className="p-5 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl glass-box border border-blue-100/90 bg-blue-50/20 space-y-5 sm:space-y-6 flex flex-col justify-between">
+              <div className="space-y-3 sm:space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-bold uppercase tracking-wider text-[#0066FF]">
+                  <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#0066FF]">
                     The CircleUp Flow
                   </span>
-                  <span className="text-xs px-2.5 py-1 rounded-full bg-blue-100/80 text-[#0066FF] font-semibold">
+                  <span className="text-[10px] sm:text-xs px-2.5 py-0.5 sm:py-1 rounded-full bg-blue-100/80 text-[#0066FF] font-semibold">
                     Unified
                   </span>
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold text-slate-950">
+                <h3 className="text-lg sm:text-2xl font-bold text-slate-950">
                   One clean flow from wanting to play to game confirmed.
                 </h3>
-                <p className="text-sm text-slate-600 leading-relaxed">
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   You choose your sport, venue, and time. Select your players. CircleUp collects responses, tracks availability in real time, and automatically locks in the match once required players accept.
                 </p>
               </div>
 
-              <div className="space-y-2.5 pt-4 border-t border-blue-100/60 text-xs">
-                <div className="p-3 rounded-xl bg-white/90 border border-slate-200/70 text-slate-900 font-semibold flex items-center justify-between shadow-2xs">
+              <div className="space-y-2 pt-3 sm:pt-4 border-t border-blue-100/60 text-xs">
+                <div className="p-2.5 sm:p-3 rounded-xl bg-white/90 border border-slate-200/70 text-slate-900 font-semibold flex items-center justify-between shadow-2xs">
                   <span>Singles or Doubles parameters set</span>
                   <span className="text-emerald-600 font-bold">1 Tap</span>
                 </div>
-                <div className="p-3 rounded-xl bg-white/90 border border-slate-200/70 text-slate-900 font-semibold flex items-center justify-between shadow-2xs">
+                <div className="p-2.5 sm:p-3 rounded-xl bg-white/90 border border-slate-200/70 text-slate-900 font-semibold flex items-center justify-between shadow-2xs">
                   <span>Player responses tracked live</span>
                   <span className="text-[#0066FF] font-bold">Live Status</span>
                 </div>
-                <div className="p-3 rounded-xl bg-white/90 border border-slate-200/70 text-slate-900 font-semibold flex items-center justify-between shadow-2xs">
+                <div className="p-2.5 sm:p-3 rounded-xl bg-white/90 border border-slate-200/70 text-slate-900 font-semibold flex items-center justify-between shadow-2xs">
                   <span>Automatic confirmation & calendar sync</span>
                   <span className="text-emerald-600 font-bold">Confirmed</span>
                 </div>
@@ -490,34 +499,35 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
 
 
       {/* 11. LONG-TERM VISION */}
-      <section className="py-24 md:py-32 bg-slate-950 text-white relative overflow-hidden">
+      <section className="py-24 md:py-32 bg-[#000d2a] text-white relative overflow-hidden border-t border-[#1d2d5b]">
         {/* Soft background glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-blue-600/15 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-0 right-1/4 w-[400px] h-[300px] bg-[#39d078]/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8 relative z-10">
           
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm sm:text-base font-bold bg-white/10 text-slate-100 border border-white/20 backdrop-blur-md shadow-sm">
-            Long-Term Vision
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-mono font-bold uppercase tracking-wider bg-[#081e51] text-[#39d078] border border-[#404f9a]/60 backdrop-blur-md shadow-sm">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#39d078] animate-pulse" /> Long-Term Vision
           </div>
 
-          <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight sm:whitespace-nowrap">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight">
             The scheduling engine for sports.
           </h2>
 
-          <p className="text-base sm:text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto font-normal">
+          <p className="text-base sm:text-xl text-[#8e9cbc] leading-relaxed max-w-2xl mx-auto font-normal">
             Sports technology has transformed how athletes train, compete, and track performance. But organizing the game itself still often depends on group chats, texts, and manual coordination. CircleUp is building the scheduling layer that connects wanting to play with actually getting the game on the calendar.
           </p>
 
           {/* Prominent 4-word statement */}
-          <div className="pt-6">
-            <div className="inline-flex flex-wrap items-center justify-center gap-3 sm:gap-6 px-6 sm:px-10 py-4 sm:py-5 rounded-3xl glass-box-dark border border-white/20 shadow-2xl">
-              <span className="text-base sm:text-2xl font-extrabold text-white tracking-wide">Create.</span>
-              <span className="text-[#0066FF] text-xl font-bold">•</span>
-              <span className="text-base sm:text-2xl font-extrabold text-white tracking-wide">Invite.</span>
-              <span className="text-[#0066FF] text-xl font-bold">•</span>
-              <span className="text-base sm:text-2xl font-extrabold text-white tracking-wide">Confirm.</span>
-              <span className="text-[#0066FF] text-xl font-bold">•</span>
-              <span className="text-base sm:text-2xl font-extrabold text-[#0066FF] tracking-wide">Play.</span>
+          <div className="pt-4 sm:pt-6">
+            <div className="inline-flex flex-wrap items-center justify-center gap-2 sm:gap-6 px-4 sm:px-10 py-3 sm:py-5 rounded-2xl sm:rounded-3xl squash-card-navy border border-[#404f9a]/50 shadow-2xl">
+              <span className="text-sm sm:text-2xl font-extrabold text-white tracking-wide">Create.</span>
+              <span className="text-[#39d078] text-sm sm:text-xl font-bold">•</span>
+              <span className="text-sm sm:text-2xl font-extrabold text-white tracking-wide">Invite.</span>
+              <span className="text-[#39d078] text-sm sm:text-xl font-bold">•</span>
+              <span className="text-sm sm:text-2xl font-extrabold text-white tracking-wide">Confirm.</span>
+              <span className="text-[#39d078] text-sm sm:text-xl font-bold">•</span>
+              <span className="text-sm sm:text-2xl font-extrabold text-[#39d078] tracking-wide">Play.</span>
             </div>
           </div>
 
@@ -526,28 +536,28 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
 
 
       {/* 12. DOWNLOAD CALL TO ACTION */}
-      <section id="download" className="py-20 md:py-28 bg-gradient-to-b from-white to-slate-50/70 text-center">
+      <section id="download" className="py-16 md:py-28 bg-gradient-to-b from-white to-slate-50/70 text-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="glass-box p-8 sm:p-12 md:p-14 rounded-3xl space-y-6 border border-slate-200/90 shadow-md flex flex-col items-center text-center">
+          <div className="glass-box p-6 sm:p-12 md:p-14 rounded-2xl sm:rounded-3xl space-y-5 sm:space-y-6 border border-slate-200/90 shadow-md flex flex-col items-center text-center">
             <div className="flex justify-center w-full">
               <Logo size="xl" showWordmark={true} />
             </div>
             
-            <h2 className="w-full text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight sm:whitespace-nowrap -translate-x-3 sm:-translate-x-5">
+            <h2 className="w-full text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight">
               Ready to schedule your next match?
             </h2>
             
-            <p className="text-base sm:text-lg text-slate-600 max-w-md mx-auto">
+            <p className="text-sm sm:text-lg text-slate-600 max-w-md mx-auto">
               Download CircleUp and spend less time coordinating and more time playing.
             </p>
             
-            <div className="pt-4 flex justify-center w-full">
+            <div className="pt-3 sm:pt-4 flex justify-center w-full">
               <AppButtons size="large" theme="dark" />
             </div>
             
-            <div className="pt-2 text-xs text-slate-500 flex items-center justify-center gap-4 w-full">
+            <div className="pt-2 text-xs text-slate-500 flex flex-wrap items-center justify-center gap-2 sm:gap-4 w-full">
               <span>Available for iOS and Android</span>
-              <span>•</span>
+              <span className="hidden sm:inline">•</span>
               <button onClick={() => onNavigate('/support')} className="text-[#0066FF] hover:underline font-medium">
                 Need Help? Contact Support
               </button>

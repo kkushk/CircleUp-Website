@@ -25,12 +25,12 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   };
 
   return (
-    <footer className="bg-slate-50 border-t border-slate-200/80 pt-16 pb-12 text-slate-600">
+    <footer className="bg-slate-50 border-t border-slate-200/80 pt-12 sm:pt-16 pb-10 sm:pb-12 text-slate-600">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-slate-200">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-8 sm:gap-10 pb-8 sm:pb-12 border-b border-slate-200">
           
           {/* Brand Col */}
-          <div className="md:col-span-5 space-y-4">
+          <div className="sm:col-span-2 md:col-span-5 space-y-3.5">
             <Logo size="md" />
             <p className="text-sm text-slate-600 max-w-sm leading-relaxed">
               {SITE_CONFIG.visionStatement}
@@ -38,7 +38,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <p className="text-xs text-slate-500">
               {SITE_CONFIG.heroPositioning}
             </p>
-            <div className="pt-2">
+            <div className="pt-1 flex justify-start">
               <AppButtons size="compact" theme="light" />
             </div>
           </div>

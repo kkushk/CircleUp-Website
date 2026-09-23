@@ -172,7 +172,7 @@ export const WebsiteExplanationCard: React.FC<{ onNavigate: (path: string) => vo
             03
           </div>
           <span className="text-[11px] font-semibold uppercase tracking-wider text-slate-700 bg-slate-100 border border-slate-200 px-3 py-1 rounded-full">
-            Website Explanation—Not an App Screen
+            Website Explanation (Not an App Screen)
           </span>
         </div>
         <h3 className="text-xl font-bold text-slate-950 tracking-tight">

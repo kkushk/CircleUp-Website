@@ -84,11 +84,11 @@ export const SupportPage: React.FC<SupportPageProps> = ({ onNavigate }) => {
   ];
 
   return (
-    <div className="w-full bg-white min-h-[80vh] py-16 sm:py-24 text-slate-900">
+    <div className="w-full bg-white min-h-[80vh] py-10 sm:py-24 text-slate-900">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Back Link */}
-        <div className="mb-8 flex items-center justify-between">
+        <div className="mb-6 sm:mb-8 flex items-center justify-between">
           <button
             onClick={() => onNavigate('/')}
             className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-500 hover:text-slate-950 transition-colors"
@@ -99,35 +99,35 @@ export const SupportPage: React.FC<SupportPageProps> = ({ onNavigate }) => {
         </div>
 
         {/* Header */}
-        <div className="border-b border-slate-200 pb-8 mb-12 space-y-3 text-center sm:text-left">
+        <div className="border-b border-slate-200 pb-6 sm:pb-8 mb-8 sm:mb-12 space-y-2 sm:space-y-3 text-center sm:text-left">
           <span className="text-xs font-bold uppercase tracking-widest text-[#0066FF]">
             Help Center
           </span>
-          <h1 className="text-3xl sm:text-5xl font-extrabold text-slate-950 tracking-tight">
+          <h1 className="text-2xl sm:text-5xl font-extrabold text-slate-950 tracking-tight">
             How can we help?
           </h1>
-          <p className="text-base sm:text-lg text-slate-600">
+          <p className="text-sm sm:text-lg text-slate-600">
             Have questions about CircleUp or your matches? Contact our support team.
           </p>
         </div>
 
         {/* Direct Email Card */}
-        <div className="mb-14 p-8 rounded-3xl glass-box flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div className="mb-10 sm:mb-14 p-5 sm:p-8 rounded-2xl sm:rounded-3xl glass-box flex flex-col sm:flex-row items-center justify-between gap-5 sm:gap-6">
           <div className="space-y-2 text-center sm:text-left">
-            <h3 className="text-xl font-bold text-slate-950">Email CircleUp Support</h3>
-            <p className="text-sm text-slate-600">
+            <h3 className="text-lg sm:text-xl font-bold text-slate-950">Email CircleUp Support</h3>
+            <p className="text-xs sm:text-sm text-slate-600">
               For account inquiries, match assistance, or compliance questions:
             </p>
             <a 
               href={`mailto:${SITE_CONFIG.supportEmail}`} 
-              className="inline-flex items-center gap-2 text-base font-bold text-[#0066FF] hover:underline"
+              className="inline-flex items-center gap-2 text-sm sm:text-base font-bold text-[#0066FF] hover:underline"
             >
               <Mail className="w-4 h-4 text-slate-950" /> {SITE_CONFIG.supportEmail}
             </a>
           </div>
           <a
             href={`mailto:${SITE_CONFIG.supportEmail}`}
-            className="px-6 py-3 rounded-xl bg-slate-950 hover:bg-black text-white text-xs font-semibold tracking-wide transition-all shrink-0 shadow-xs"
+            className="w-full sm:w-auto text-center px-6 py-3 rounded-xl bg-slate-950 hover:bg-black text-white text-xs font-semibold tracking-wide transition-all shrink-0 shadow-xs"
           >
             Send Email
           </a>

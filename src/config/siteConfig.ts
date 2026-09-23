@@ -22,8 +22,8 @@ export const SITE_CONFIG = {
   
   // Taglines
   heroHeadline: 'Schedule the game. Skip the group chat.',
-  heroSubheadline: 'CircleUp makes it simple to bring together the people, place, and time for your next game—without the endless back-and-forth.',
-  heroSportsList: 'Squash. Tennis. Padel. Pickleball. Golf. And more.',
+  heroSubheadline: 'CircleUp makes it simple to bring together the people, place, and time for your next game without the endless back-and-forth.',
+  heroSportsList: 'Squash. SDA. Tennis. Padel. Platform Tennis. Pickleball. Golf',
   heroPositioning: 'Built for the way athletes actually play. Starting from squash and doubles. Expanding across racquet sports, golf, and beyond.',
   visionStatement: 'The scheduling engine for sports.',
   brandPunchlines: {
@@ -62,24 +62,6 @@ export const SITE_CONFIG = {
       status: 'Active'
     },
     { 
-      id: 'pickleball', 
-      name: 'Pickleball', 
-      type: 'Paddle Sport',
-      format: 'Doubles & Singles', 
-      court: 'Dedicated Courts',
-      description: 'Quick game scheduling for 4-player doubles and open court rotations.',
-      status: 'Active'
-    },
-    { 
-      id: 'badminton', 
-      name: 'Badminton', 
-      type: 'Racquet Sport',
-      format: 'Singles & Doubles', 
-      court: 'Indoor Courts',
-      description: 'Fast rally play coordination with reliable participant confirmations.',
-      status: 'Active'
-    },
-    { 
       id: 'padel', 
       name: 'Padel', 
       type: 'Racquet Sport',
@@ -89,12 +71,21 @@ export const SITE_CONFIG = {
       status: 'Active'
     },
     { 
-      id: 'table-tennis', 
-      name: 'Table Tennis', 
+      id: 'platform-tennis', 
+      name: 'Platform Tennis', 
       type: 'Paddle Sport',
-      format: 'Singles & Doubles', 
-      court: 'Club & Rec',
-      description: 'Quick match scheduling and friendly ladders across clubs and rec spaces.',
+      format: 'Doubles only', 
+      court: 'Heated Screened Court',
+      description: 'Screened court play and heated deck doubles coordination tailored for winter and platform tennis leagues.',
+      status: 'Active'
+    },
+    { 
+      id: 'pickleball', 
+      name: 'Pickleball', 
+      type: 'Paddle Sport',
+      format: 'Doubles & Singles', 
+      court: 'Dedicated Courts',
+      description: 'Quick game scheduling for 4-player doubles and open court rotations.',
       status: 'Active'
     },
     { 
@@ -104,6 +95,15 @@ export const SITE_CONFIG = {
       format: 'Foursomes & Pairs', 
       court: 'Course & Tee Times',
       description: 'Coordinate your four-ball or friendly round without days of back-and-forth.',
+      status: 'Active'
+    },
+    { 
+      id: 'badminton', 
+      name: 'Badminton', 
+      type: 'Racquet Sport',
+      format: 'Singles & Doubles', 
+      court: 'Indoor Courts',
+      description: 'Fast rally play coordination with reliable participant confirmations.',
       status: 'Active'
     },
   ],
