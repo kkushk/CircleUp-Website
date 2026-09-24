@@ -3,6 +3,7 @@ import { SITE_CONFIG } from '../config/siteConfig';
 import { Logo } from '../components/Logo';
 import { AppButtons } from '../components/AppButtons';
 import { HeroVisual } from '../components/HeroVisual';
+import { RotatingGlobe } from '../components/RotatingGlobe';
 import { SportsSection } from '../components/SportsSection';
 import { HowItWorksSection } from '../components/HowItWorksSection';
 import { FeaturesGrid } from '../components/FeaturesGrid';
@@ -468,7 +469,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
 
 
       {/* 10. US MARKET + GLOBAL AMBITION */}
-      <section className="py-20 md:py-28 bg-gradient-to-b from-white via-slate-50/40 to-white border-b border-slate-100">
+      <section className="py-20 md:py-28 bg-gradient-to-b from-white via-slate-50/40 to-white border-b border-slate-100 overflow-hidden">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
           
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-pill text-xs font-bold uppercase tracking-wider text-[#0066FF]">
@@ -483,7 +484,18 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             CircleUp is growing across sports communities in the United States, with a platform designed to work wherever people organize games.
           </p>
 
-          <div className="pt-4">
+          {/* Interactive Rotating Earth Globe in Black (Varmora-inspired) */}
+          <div className="pt-4 pb-2 flex flex-col items-center justify-center relative">
+            <div className="relative w-full max-w-[220px] sm:max-w-[260px] mx-auto flex items-center justify-center">
+              <RotatingGlobe size={260} />
+            </div>
+            <div className="text-[10px] font-mono uppercase tracking-wider text-slate-400 mt-2 flex items-center gap-1.5">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#0066FF] animate-pulse" />
+              <span>Interactive 3D • Drag to rotate</span>
+            </div>
+          </div>
+
+          <div className="pt-2">
             <div className="inline-block p-6 sm:p-8 rounded-3xl glass-box border border-slate-200/90 max-w-xl text-center space-y-3">
               <p className="text-sm sm:text-base font-bold text-slate-900">
                 Our ambition is simple: make organizing sports easier, wherever people play.
