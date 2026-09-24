@@ -129,51 +129,51 @@ export const FeaturesGrid: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
-        <div className="max-w-3xl mx-auto text-center space-y-3 sm:space-y-4 mb-10 sm:mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-pill text-xs font-bold uppercase tracking-wider text-[#0066FF] shadow-2xs">
-            <Sparkles className="w-3.5 h-3.5 text-[#0066FF]" /> Complete Feature Engine
+        <div className="max-w-3xl mx-auto text-center space-y-4 mb-12 sm:mb-16">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-pill text-xs sm:text-sm font-bold uppercase tracking-wider text-[#0066FF] shadow-2xs">
+            <Sparkles className="w-4 h-4 text-[#0066FF]" /> Complete Feature Engine
           </div>
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-slate-950 tracking-tight">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-black text-slate-950 tracking-tight leading-tight">
             Engineered for how <br className="hidden sm:inline" />
             athletes actually organize.
           </h2>
-          <p className="text-sm sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-base sm:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto font-normal">
             Everything you need to create, invite, confirm, and play without bloated spreadsheets or messy group chat threads.
           </p>
         </div>
 
         {/* 12-Feature Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {features.map((f) => {
             const Icon = f.icon;
             return (
               <div 
                 key={f.id}
-                className="p-5 sm:p-7 rounded-2xl sm:rounded-3xl glass-box glass-box-hover flex flex-col justify-between space-y-3 sm:space-y-4 border border-slate-200/80"
+                className="p-6 sm:p-8 rounded-3xl glass-box glass-box-hover flex flex-col justify-between space-y-4 border border-slate-200/90 shadow-2xs"
               >
                 <div>
-                  <div className="flex items-center justify-between mb-3 sm:mb-4">
-                    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl sm:rounded-2xl bg-slate-950 text-white flex items-center justify-center shadow-xs">
-                      <Icon className="w-4.5 h-4.5 sm:w-5 sm:h-5 text-white" />
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-slate-950 text-white flex items-center justify-center shadow-xs">
+                      <Icon className="w-5 h-5 text-white" />
                     </div>
-                    <span className="text-[10px] sm:text-[11px] font-semibold px-2.5 py-0.5 sm:py-1 rounded-full glass-inner-chip text-slate-600">
+                    <span className="text-xs font-semibold px-3 py-1 rounded-full glass-inner-chip text-slate-700">
                       {f.badge}
                     </span>
                   </div>
 
-                  <div className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-[#0066FF]">
+                  <div className="text-xs font-bold uppercase tracking-wider text-[#0066FF]">
                     {f.category}
                   </div>
-                  <h3 className="text-base sm:text-lg font-bold text-slate-950 mt-1 mb-1.5 sm:mb-2">
+                  <h3 className="text-lg sm:text-xl font-black text-slate-950 mt-1.5 mb-2">
                     {f.title}
                   </h3>
-                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
                     {f.description}
                   </p>
                 </div>
 
-                <div className="pt-2.5 sm:pt-3 border-t border-slate-100/80 flex items-center gap-1.5 text-[10px] sm:text-[11px] font-medium text-slate-500">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+                <div className="pt-3 border-t border-slate-100 flex items-center gap-2 text-xs font-semibold text-slate-500">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500" />
                   <span>Available in CircleUp Mobile</span>
                 </div>
               </div>

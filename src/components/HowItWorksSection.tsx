@@ -78,32 +78,32 @@ export const HowItWorksSection: React.FC = () => {
         
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-14">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-pill text-xs font-bold uppercase tracking-wider text-[#0066FF] shadow-2xs">
-            <Sparkles className="w-3.5 h-3.5 text-[#0066FF]" /> 5-Step Scheduling Flow
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-pill text-xs sm:text-sm font-bold uppercase tracking-wider text-[#0066FF] shadow-2xs">
+            <Sparkles className="w-4 h-4 text-[#0066FF]" /> 5-Step Scheduling Flow
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-950 tracking-tight">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-black text-slate-950 tracking-tight">
             How CircleUp works.
           </h2>
-          <p className="text-base sm:text-lg text-slate-600">
+          <p className="text-base sm:text-xl text-slate-600 leading-relaxed font-normal">
             A frictionless flow engineered to take you from wanting to play to a confirmed game on the calendar.
           </p>
         </div>
 
         {/* 5 Step Selector Nav Pills */}
-        <div className="-mx-4 px-4 sm:mx-0 sm:px-0 flex items-center justify-start sm:justify-center gap-2 overflow-x-auto pb-3 pt-1 mb-8 sm:mb-10 no-scrollbar scroll-smooth">
+        <div className="-mx-4 px-4 sm:mx-0 sm:px-0 flex items-center justify-start sm:justify-center gap-2.5 overflow-x-auto pb-3 pt-1 mb-8 sm:mb-10 no-scrollbar scroll-smooth">
           {steps.map((s, idx) => {
             const isActive = activeStep === idx;
             return (
               <button
                 key={s.num}
                 onClick={() => setActiveStep(idx)}
-                className={`px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl sm:rounded-2xl text-xs sm:text-sm font-semibold transition-all duration-200 flex items-center gap-2 sm:gap-2.5 shrink-0 cursor-pointer ${
+                className={`px-4 sm:px-5 py-2.5 sm:py-3 rounded-2xl text-xs sm:text-sm font-bold transition-all duration-200 flex items-center gap-2.5 shrink-0 cursor-pointer ${
                   isActive
                     ? 'bg-slate-950 text-white shadow-md scale-[1.02]'
                     : 'glass-pill text-slate-700 hover:text-slate-950 hover:bg-white shadow-2xs'
                 }`}
               >
-                <span className={`w-4.5 h-4.5 sm:w-5 sm:h-5 rounded-md flex items-center justify-center text-[10px] font-mono font-bold ${
+                <span className={`w-5 h-5 rounded-md flex items-center justify-center text-[11px] font-mono font-bold ${
                   isActive ? 'bg-[#0066FF] text-white' : 'bg-slate-200/80 text-slate-700'
                 }`}>
                   {s.num}
@@ -115,47 +115,47 @@ export const HowItWorksSection: React.FC = () => {
         </div>
 
         {/* Active Step Detailed Showcase Box */}
-        <div className="glass-box p-4 sm:p-8 md:p-12 rounded-2xl sm:rounded-3xl border border-slate-200/85 shadow-sm">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-center">
+        <div className="glass-box p-6 sm:p-10 md:p-14 rounded-3xl border border-slate-200/85 shadow-sm">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
             
             {/* Left Narrative */}
-            <div className="lg:col-span-6 space-y-4 sm:space-y-5 text-left">
-              <div className="flex items-center gap-2.5 sm:gap-3">
-                <span className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-slate-950 text-white flex items-center justify-center font-mono font-bold text-xs shadow-xs">
+            <div className="lg:col-span-6 space-y-5 text-left">
+              <div className="flex items-center gap-3">
+                <span className="w-8 h-8 rounded-xl bg-slate-950 text-white flex items-center justify-center font-mono font-bold text-xs shadow-xs">
                   {currentStep.num}
                 </span>
-                <span className="text-xs font-bold uppercase tracking-wider text-[#0066FF]">
+                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#0066FF]">
                   {currentStep.tagline}
                 </span>
               </div>
 
-              <h3 className="text-xl sm:text-4xl font-extrabold text-slate-950 tracking-tight leading-tight">
+              <h3 className="text-2xl sm:text-4xl md:text-5xl font-black text-slate-950 tracking-tight leading-tight">
                 {currentStep.title}
               </h3>
 
-              <p className="text-slate-600 text-xs sm:text-base leading-relaxed">
+              <p className="text-slate-600 text-sm sm:text-lg leading-relaxed font-normal">
                 {currentStep.description}
               </p>
 
-              <div className="p-3 sm:p-4 rounded-xl sm:rounded-2xl glass-inner-chip space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-slate-800 border border-slate-200/70 shadow-2xs">
-                <div className="flex items-center gap-2 font-semibold text-slate-900">
-                  <StepIcon className="w-4 h-4 text-[#0066FF]" />
+              <div className="p-4 sm:p-5 rounded-2xl glass-inner-chip space-y-2 text-sm text-slate-800 border border-slate-200/70 shadow-2xs">
+                <div className="flex items-center gap-2 font-bold text-slate-900 text-sm sm:text-base">
+                  <StepIcon className="w-4 h-4 text-[#0066FF] shrink-0" />
                   <span>Why this matters</span>
                 </div>
-                <p className="text-xs text-slate-600 leading-relaxed">
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
                   {idxExplanation(activeStep)}
                 </p>
               </div>
 
               {/* Progress & Next Step Button */}
-              <div className="pt-2 sm:pt-3 flex items-center justify-between gap-4 border-t border-slate-200/60">
-                <div className="flex items-center gap-1.5">
+              <div className="pt-3 sm:pt-4 flex items-center justify-between gap-4 border-t border-slate-200/60">
+                <div className="flex items-center gap-2">
                   {steps.map((_, i) => (
                     <button
                       key={i}
                       onClick={() => setActiveStep(i)}
-                      className={`h-2 rounded-full transition-all duration-300 ${
-                        i === activeStep ? 'w-8 bg-[#0066FF]' : 'w-2 bg-slate-300 hover:bg-slate-400'
+                      className={`h-2.5 rounded-full transition-all duration-300 ${
+                        i === activeStep ? 'w-9 bg-[#0066FF]' : 'w-2.5 bg-slate-300 hover:bg-slate-400'
                       }`}
                       aria-label={`Go to step ${i + 1}`}
                     />
@@ -164,10 +164,10 @@ export const HowItWorksSection: React.FC = () => {
 
                 <button
                   onClick={() => setActiveStep((prev) => (prev + 1) % steps.length)}
-                  className="inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl bg-slate-950 hover:bg-black text-white text-xs font-semibold shadow-xs transition-all active:scale-98 cursor-pointer"
+                  className="inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-slate-950 hover:bg-black text-white text-xs sm:text-sm font-bold shadow-md transition-all active:scale-98 cursor-pointer"
                 >
                   {activeStep === steps.length - 1 ? 'Start Over' : 'Next Step'} 
-                  <ArrowRight className="w-3.5 h-3.5" />
+                  <ArrowRight className="w-4 h-4" />
                 </button>
               </div>
             </div>
@@ -183,24 +183,24 @@ export const HowItWorksSection: React.FC = () => {
         </div>
 
         {/* Quick Summary Grid of All 5 Steps */}
-        <div className="mt-8 sm:mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4 text-left">
+        <div className="mt-8 sm:mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5 sm:gap-4 text-left">
           {steps.map((s, idx) => {
             const isCurrent = activeStep === idx;
             return (
               <div
                 key={s.num}
                 onClick={() => setActiveStep(idx)}
-                className={`p-4 sm:p-6 rounded-xl sm:rounded-2xl cursor-pointer transition-all duration-200 flex flex-col justify-between ${
+                className={`p-5 sm:p-6 rounded-2xl cursor-pointer transition-all duration-200 flex flex-col justify-between ${
                   isCurrent
-                    ? 'glass-box ring-2 ring-[#0066FF] bg-white shadow-md'
-                    : 'glass-box glass-box-hover hover:border-slate-300'
+                    ? 'glass-box ring-2 ring-[#0066FF] bg-white shadow-md scale-[1.02]'
+                    : 'glass-box glass-box-hover hover:border-slate-300 shadow-2xs'
                 }`}
               >
                 <div>
-                  <div className="text-xs sm:text-sm font-mono font-bold text-[#0066FF] mb-1">{s.num}</div>
-                  <h4 className="font-extrabold text-slate-950 text-sm sm:text-lg leading-snug">{s.title}</h4>
+                  <div className="text-xs sm:text-sm font-mono font-bold text-[#0066FF] mb-1.5">{s.num}</div>
+                  <h4 className="font-extrabold text-slate-950 text-base sm:text-xl leading-snug">{s.title}</h4>
                 </div>
-                <p className="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
+                <p className="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed font-normal">
                   {s.tagline}
                 </p>
               </div>
